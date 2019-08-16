@@ -1,0 +1,141 @@
+{
+	"canvas": {
+		"clear_color": true,
+		"clear_z": true,
+		"color": [
+			66,
+			66,
+			66,
+			255
+		]
+	},
+	"environment": {
+		"ambient": [
+			0,
+			0,
+			0,
+			255
+		],
+		"brdf_map": "core/pbr/brdf.dds",
+		"current_camera": null,
+		"fog_color": [
+			255,
+			255,
+			255,
+			255
+		],
+		"fog_far": 0.0,
+		"fog_near": 0.0,
+		"irradiance_map": "core/pbr/irradiance.dds",
+		"radiance_map": "core/pbr/radiance.dds"
+	},
+	"nodes": [
+		{
+			"components": [
+				0,
+				4294967295,
+				0,
+				4294967295,
+				4294967295
+			],
+			"idx": 0,
+			"name": "crusio"
+		}
+	],
+	"objects": [
+		{
+			"materials": [
+				{
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uDiffuseMap",
+							"stage": 0,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/crusio_orm.png"
+							}
+						},
+						{
+							"name": "uBaseOpacityMap",
+							"stage": 0,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/crusio_alb.png"
+							}
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"stage": 1,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/crusio_orm.png"
+							}
+						},
+						{
+							"name": "uNormalMap",
+							"stage": 2,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/flat_normal.png"
+							}
+						}
+					],
+					"values": [
+						{
+							"name": "uDiffuseColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uSpecularColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								0.03124999813735485
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								9.999999974752427e-07,
+								9.999899930335232e-07,
+								9.999899930335232e-07,
+								-1.0
+							]
+						}
+					]
+				}
+			],
+			"name": "ship_crusio/crusio.geo"
+		}
+	],
+	"transforms": [
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"rot": [
+				-90.0,
+				180.0,
+				180.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	]
+}

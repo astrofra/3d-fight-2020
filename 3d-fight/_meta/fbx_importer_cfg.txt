@@ -1,6 +1,6 @@
 "anim_policy":"0"
 "detect_geometry_instances":"1"
-"fbx_file_path":"d:/projects/games/git_3d-fight-2020/3d-fight/_prod/ae8ddf5b-8d34-488f-a95a-a7cd08701884"
+"fbx_file_path":"c:/works/harfang/gs-reboot/git_3d-fight-2020/3d-fight/_prod/7857a925-57fe-4259-f324-7197d23ae24e"
 "finalizer_script":""
 "fix_geometry_orientation":"1"
 "geometry_policy":"0"
