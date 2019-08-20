@@ -46,93 +46,6 @@
 			"idx": 0,
 			"instance": 0,
 			"name": "Instance"
-		},
-		{
-			"components": [
-				1,
-				4294967295,
-				0,
-				4294967295,
-				4294967295
-			],
-			"idx": 1,
-			"name": "crusio"
-		}
-	],
-	"objects": [
-		{
-			"materials": [
-				{
-					"program": "core/shader/pbr.hps",
-					"textures": [
-						{
-							"name": "uDiffuseMap",
-							"stage": 0,
-							"texture": {
-								"flags": 0,
-								"name": "ship_crusio/crusio_orm.png"
-							}
-						},
-						{
-							"name": "uBaseOpacityMap",
-							"stage": 0,
-							"texture": {
-								"flags": 0,
-								"name": "ship_crusio/crusio_alb.png"
-							}
-						},
-						{
-							"name": "uOcclusionRoughnessMetalnessMap",
-							"stage": 1,
-							"texture": {
-								"flags": 0,
-								"name": "ship_crusio/crusio_orm.png"
-							}
-						},
-						{
-							"name": "uNormalMap",
-							"stage": 2,
-							"texture": {
-								"flags": 0,
-								"name": "ship_crusio/flat_normal.png"
-							}
-						}
-					],
-					"values": [
-						{
-							"name": "uDiffuseColor",
-							"type": "vec4",
-							"value": [
-								0.5882353186607361,
-								0.5882353186607361,
-								0.5882353186607361,
-								1.0
-							]
-						},
-						{
-							"name": "uSpecularColor",
-							"type": "vec4",
-							"value": [
-								0.0,
-								0.0,
-								0.0,
-								0.03124999813735485
-							]
-						},
-						{
-							"name": "uSelfColor",
-							"type": "vec4",
-							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
-								-1.0
-							]
-						}
-					]
-				}
-			],
-			"name": "ship_crusio/crusio.geo"
 		}
 	],
 	"transforms": [
@@ -147,24 +60,6 @@
 				0.0,
 				0.0,
 				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": 0,
-			"pos": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"rot": [
-				-90.0,
-				180.0,
-				180.0
 			],
 			"scl": [
 				1.0,

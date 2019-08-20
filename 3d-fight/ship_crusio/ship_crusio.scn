@@ -3,9 +3,9 @@
 		"clear_color": true,
 		"clear_z": true,
 		"color": [
-			66,
-			66,
-			66,
+			55,
+			55,
+			55,
 			255
 		]
 	},
@@ -40,12 +40,31 @@
 			],
 			"idx": 0,
 			"name": "crusio"
+		},
+		{
+			"components": [
+				1,
+				4294967295,
+				1,
+				4294967295,
+				4294967295
+			],
+			"idx": 1,
+			"name": "crusio_shadow"
 		}
 	],
 	"objects": [
 		{
+			"material_infos": [
+				{
+					"name": "crusio"
+				}
+			],
 			"materials": [
 				{
+					"blend_mode": "opaque",
+					"depth_test": "leq",
+					"face_culling": "cw",
 					"program": "core/shader/pbr.hps",
 					"textures": [
 						{
@@ -57,6 +76,14 @@
 							}
 						},
 						{
+							"name": "uSpecularMap",
+							"stage": 1,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/crusio_alb.png"
+							}
+						},
+						{
 							"name": "uBaseOpacityMap",
 							"stage": 0,
 							"texture": {
@@ -65,19 +92,19 @@
 							}
 						},
 						{
-							"name": "uOcclusionRoughnessMetalnessMap",
-							"stage": 1,
-							"texture": {
-								"flags": 0,
-								"name": "ship_crusio/crusio_orm.png"
-							}
-						},
-						{
 							"name": "uNormalMap",
 							"stage": 2,
 							"texture": {
 								"flags": 0,
 								"name": "ship_crusio/flat_normal.png"
+							}
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"stage": 1,
+							"texture": {
+								"flags": 0,
+								"name": "ship_crusio/crusio_orm.png"
 							}
 						}
 					],
@@ -116,6 +143,68 @@
 				}
 			],
 			"name": "ship_crusio/crusio.geo"
+		},
+		{
+			"material_infos": [
+				{
+					"name": "crusio_shadow"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "alpha",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"program": "core/shader/default.hps",
+					"textures": [
+						{
+							"name": "uDiffuseMap",
+							"stage": 0
+						},
+						{
+							"name": "uOpacityMap",
+							"stage": 5,
+							"texture": {
+								"flags": 0,
+								"name": "crusio_shadow/crusio_shadow.png"
+							}
+						}
+					],
+					"values": [
+						{
+							"name": "uDiffuseColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uSpecularColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								0.03124999813735485
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					]
+				}
+			],
+			"name": "crusio_shadow/crusio_shadow.geo"
 		}
 	],
 	"transforms": [
@@ -127,9 +216,27 @@
 				0.0
 			],
 			"rot": [
-				-90.0,
-				180.0,
-				180.0
+				-2.504477834008867e-06,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": 0,
+			"pos": [
+				0.0,
+				-2.366896629333496,
+				1.0346033008090672e-07
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
 			],
 			"scl": [
 				1.0,
